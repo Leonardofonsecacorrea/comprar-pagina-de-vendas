@@ -61,7 +61,7 @@
 
                 <div class="buttons pt-3">
                     <a href="https://wa.me/message/ICU6GJCSET3AA1" target="_blank" class="btn btn-primary rounded">ME CONTRATE</a>
-                    <button class="btn btn-dark rounded">DOWNLOAD CV</button>
+                    <a href="curriculo.pdf" class="btn btn-dark rounded">DOWNLOAD CV</a>
                 </div>      
 
                 <div class="socials mt-4">
@@ -239,7 +239,7 @@
                         <img src="assets/imgs/folio-4.jpg" alt="">
                         <div class="overlay">
                             <div class="overlay-infos">
-                                <h5>Project Title</h5>
+                                <h5>Consultoria Comercial</h5>
                                 <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
                                 <a href="javascript:void(0)"><i class="ti-link"></i></a>
                             </div>                              
@@ -251,9 +251,9 @@
                         <img src="assets/imgs/folio-5.jpg" alt="">
                         <div class="overlay">
                             <div class="overlay-infos">
-                                <h5>Project Title</h5>
-                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
+                                <h5>Tênis shop Pelotas</h5>
+                                <a href="https://leonardofonsecacorrea.github.io/tenisshoppelotas/"><i class="ti-zoom-in"></i></a>
+                                <a href="https://leonardofonsecacorrea.github.io/tenisshoppelotas/"><i class="ti-link"></i></a>
                             </div>  
                         </div>
                     </div>
@@ -261,7 +261,7 @@
                         <img src="assets/imgs/folio-6.jpg" alt="">
                         <div class="overlay">
                             <div class="overlay-infos">
-                                <h5>Project Title</h5>
+                                <h5>Tenha seu Site aqui</h5>
                                 <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
                                 <a href="javascript:void(0)"><i class="ti-link"></i></a>
                             </div>                              
@@ -332,8 +332,8 @@
                 <div class="card-body text-light">
                     <div class="row align-items-center">
                         <div class="col-sm-9 text-center text-sm-left">
-                            <h5 class="mt-3">Me contrate para seu projeto</h5>
-                            <p class="mb-3">Seu projeto bom e barato, peça aqui!</p>
+                            <h5 class="mt-3">Me contrate para construir seu projeto</h5>
+                            <p class="mb-3">Não apenas um site mas sim su comunição online, peça aqui!</p>
                         </div>
                         <div class="col-sm-3 text-center text-sm-right">
                             <a href="https://wa.me/message/ICU6GJCSET3AA1" target="_blank" class="btn btn-light rounded">Me contrate!</a>
@@ -356,18 +356,35 @@
                 <div class="form">
                     <h6 class="subtitle">Solicite uma consultoria personalizada</h6>
                     <h6 class="section-title mb-4">Entre em contato</h6>
-                    <form>
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea name="contact-message" id="" cols="30" rows="5" class="form-control" placeholder="Message"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-block rounded w-lg">Mande uma mensagem</button>
-                    </form>
+                    <form action="https://api.web3forms.com/submit" method="POST">
+    <!-- Chave secreta (obrigatória) -->
+    <input type="hidden" name="access_key" value="e11b6137-6cdd-4c83-90d4-0d5b8467294b">
+
+    <!-- Campo opcional: assunto do e-mail que você vai receber -->
+    <input type="hidden" name="subject" value="Nova mensagem do portfólio!">
+
+    <!-- Campo opcional: pra onde redirecionar após envio (opcional) -->
+    <input type="hidden" name="redirect" value="https://leonardoconsultoria.lovable.app/">
+
+    <!-- Seus campos reais (importante: todos com name="") -->
+    <div class="form-group">
+        <input type="email" name="email" class="form-control" placeholder="Seu e-mail" required>
+    </div>
+
+    <div class="form-group">
+        <!-- Tirei o password! Não faz sentido em formulário de contato -->
+        <input type="text" name="nome" class="form-control" placeholder="Seu nome" required>
+    </div>
+
+    <div class="form-group">
+        <textarea name="mensagem" class="form-control" rows="5" placeholder="Sua mensagem" required></textarea>
+    </div>
+
+    <!-- Botão -->
+    <button type="submit" class="btn btn-primary btn-block rounded w-lg">
+        Mande uma mensagem
+    </button>
+</form>
                 </div>
                 <div class="contact-infos">
                     <div class="item">
@@ -409,10 +426,9 @@
                 </div>
                 <div class="col-sm-6">
                     <div class="socials">
-                        <a class="social-item" href="javascript:void(0)"><i class="ti-facebook"></i></a>
-                        <a class="social-item" href="javascript:void(0)"><i class="ti-google"></i></a>
+                        
                         <a class="social-item" href="https://github.com/Leonardofonsecacorrea" target="_blank"><i class="ti-github"></i></a>
-                        <a class="social-item" href="javascript:void(0)"><i class="ti-twitter"></i></a>
+                        <a class="social-item" href="https://www.instagram.com/leonardo.euaqui/"><i class="ti-twitter"></i></a>
                     </div>
                 </div>
             </div>
